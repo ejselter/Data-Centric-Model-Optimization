@@ -1,0 +1,7 @@
+My notebook was relatively simple. I decided to detect outliers with a bunch of outlier detection tools: EllipticEnvelope, IsolationForest, LOF, SVM, & SGD.
+
+After running cross validation on the dataset without the outliers for each model, I chose the models that had a clear impact on the CV score.
+
+I was concerned about overfitting because of the comparable LB scores so I decided to only remove common outliers. In retrospect, from the private score, it doesn't seem that the models were overfitting at all!
+
+I saw a lot of people zeroing out "non-informative" columns. I tried that approach but it only seemed to lower my CV score so in the end I just zeroed out id.
